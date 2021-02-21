@@ -1,5 +1,5 @@
 # AR-Rocket
-
+Place the AR Rocket at the plane which detected and after a few seconds the rocket will launch. 
 
 ## Unity Version
  Unity 2020.2.4f1 <br>
