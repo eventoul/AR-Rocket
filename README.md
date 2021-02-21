@@ -1,5 +1,5 @@
 # AR-Rocket
- An AR rocket which can launch.
+
 
 ## Unity Version
  Unity 2020.2.4f1 <br>
