@@ -32,15 +32,18 @@ public class RocketManager : MonoBehaviour
             var touch = Input.GetTouch(0);
             if (touch.phase == TouchPhase.Ended)
             {
-                if (!rocketCreated)
+                if (Input.touchCount == 1)
                 {
-                    //Rraycast Planes
-                    if (arRaycastManager.Raycast(touch.position, arRaycastHits))
+                    if (!rocketCreated)
                     {
-                        var pose = arRaycastHits[0].pose;
-                        CreateRocket(pose.position);
-                        TogglePlaneDetection(false);
-                        return;
+                        //Rraycast Planes
+                        if (arRaycastManager.Raycast(touch.position, arRaycastHits))
+                        {
+                            var pose = arRaycastHits[0].pose;
+                            CreateRocket(pose.position);
+                            TogglePlaneDetection(false);
+                            return;
+                        }
                     }
                 }
             }
@@ -63,7 +66,8 @@ public class RocketManager : MonoBehaviour
         arPlaneManager.enabled = state;
     }
 
-    private void DeleteRocket(GameObject rocketObject)
+    // delete
+    public void DeleteRocket(GameObject rocketObject)
     {
         Destroy(rocketObject);
         resetButton.gameObject.SetActive(false);
