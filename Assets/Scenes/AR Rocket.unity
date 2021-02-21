@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 466612494}
   - component: {fileID: 466612495}
   m_Layer: 0
-  m_Name: CubeManager
+  m_Name: RocketManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -287,7 +287,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arRaycastManager: {fileID: 877854127}
-  cubePrefab: {fileID: 7688813269802533866, guid: 931aab4fc1b537843abf5d9473a9d841, type: 3}
+  arPlaneManager: {fileID: 877854126}
+  rocketPrefab: {fileID: 8854619882081110099, guid: 6ace0503f5f5e6e44831975f9aeed05d, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
