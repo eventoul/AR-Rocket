@@ -66,7 +66,6 @@ public class RocketManager : MonoBehaviour
         arPlaneManager.enabled = state;
     }
 
-    // delete
     public void DeleteRocket(GameObject rocketObject)
     {
         Destroy(rocketObject);
