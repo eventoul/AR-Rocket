@@ -32,7 +32,6 @@ public class CubeManager : MonoBehaviour
                     {
                         if (hit.collider.tag == "cube")
                         {
-                            Debug.Log("Hit the cube");
                             DeleteCube(hit.collider.gameObject);
                         }
                     }
